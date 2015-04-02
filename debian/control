@@ -1,0 +1,59 @@
+Source: python-xstatic-magic-search
+Section: python
+Priority: optional
+Maintainer: PKG OpenStack <openstack-devel@lists.alioth.debian.org>
+Uploaders: Thomas Goirand <zigo@debian.org>
+Build-Depends: debhelper (>= 9),
+               dh-python,
+               python-all (>= 2.6.6-3~),
+               python-setuptools,
+               python3-all,
+               python3-setuptools
+Build-Conflicts: python-xstatic, python3-xstatic
+Standards-Version: 3.9.6
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=openstack/python-xstatic-magic-search.git
+Vcs-Git: git://anonscm.debian.org/openstack/python-xstatic-magic-search.git
+Homepage: https://github.com/stackforge/xstatic-magic-search
+
+Package: python-xstatic-magic-search
+Architecture: all
+Pre-Depends: dpkg (>= 1.15.6~)
+Depends: libjs-magic-search, python-xstatic, ${misc:Depends}, ${python:Depends}
+Description: Magic-Search XStatic support - Python 2.x
+ XStatic is a Python web development tool for handling required static data
+ files from external projects, such as CSS, images, and JavaScript. It provides
+ a lightweight infrastructure to manage them via Python modules that your app
+ can depend on in a portable, virtualenv-friendly way instead of using embedded
+ copies.
+ .
+ MagicSearch is an AngularJS directive that provides a UI for both faceted
+ filtering and as-you-type filtering. It is intended for filtering tables, such
+ as an AngularJS smart-table, but it can be used in any situation where you can
+ provide it with facets/options and consume its events.
+ .
+ MagicSearch was initially developed by David Kavanagh for Eucalyptus.
+ .
+ This package contains the Python 2.x module.
+
+Package: python3-xstatic-magic-search
+Architecture: all
+Pre-Depends: dpkg (>= 1.15.6~)
+Depends: libjs-magic-search,
+         python3-xstatic,
+         ${misc:Depends},
+         ${python3:Depends}
+Description: Magic-Search XStatic support - Python 3.x
+ XStatic is a Python web development tool for handling required static data
+ files from external projects, such as CSS, images, and JavaScript. It provides
+ a lightweight infrastructure to manage them via Python modules that your app
+ can depend on in a portable, virtualenv-friendly way instead of using embedded
+ copies.
+ .
+ MagicSearch is an AngularJS directive that provides a UI for both faceted
+ filtering and as-you-type filtering. It is intended for filtering tables, such
+ as an AngularJS smart-table, but it can be used in any situation where you can
+ provide it with facets/options and consume its events.
+ .
+ MagicSearch was initially developed by David Kavanagh for Eucalyptus.
+ .
+ This package contains the Python 3.x module.

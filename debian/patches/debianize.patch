@@ -1,0 +1,20 @@
+Description: Debianize
+ Do not use embedded version, but the file provided by libjs-magic-search.
+Author: Thomas Goirand <zigo@debian.org>
+Forwarded: not-needed
+Last-Update: 2015-04-02
+
+--- python-xstatic-magic-search-0.2.0.1.orig/xstatic/pkg/magic_search/__init__.py
++++ python-xstatic-magic-search-0.2.0.1/xstatic/pkg/magic_search/__init__.py
+@@ -34,9 +34,9 @@ HOMEPAGE = 'https://github.com/eucalyptu
+ LICENSE = '(same as %s)' % DISPLAY_NAME
+ 
+ from os.path import join, dirname
+-BASE_DIR = join(dirname(__file__), 'data')
++#BASE_DIR = join(dirname(__file__), 'data')
+ # linux package maintainers just can point to their file locations like this:
+-#BASE_DIR = '/usr/share/javascript/jquery'
++BASE_DIR = '/usr/share/javascript/magic-search'
+ 
+ LOCATIONS = {
+     # CDN locations (if no public CDN exists, use an empty dict)
