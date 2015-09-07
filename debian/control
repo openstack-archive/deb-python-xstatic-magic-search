@@ -6,11 +6,12 @@ Uploaders: Thomas Goirand <zigo@debian.org>,
            Ivan Udovichenko <iudovichenko@mirantis.com>,
 Build-Depends: debhelper (>= 9),
                dh-python,
-               python-all (>= 2.6.6-3~),
+               python-all,
                python-setuptools,
                python3-all,
-               python3-setuptools
-Build-Conflicts: python-xstatic, python3-xstatic
+               python3-setuptools,
+Build-Conflicts: python-xstatic,
+                 python3-xstatic,
 Standards-Version: 3.9.6
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=openstack/python-xstatic-magic-search.git
 Vcs-Git: git://anonscm.debian.org/openstack/python-xstatic-magic-search.git
@@ -18,8 +19,10 @@ Homepage: https://github.com/stackforge/xstatic-magic-search
 
 Package: python-xstatic-magic-search
 Architecture: all
-Pre-Depends: dpkg (>= 1.15.6~)
-Depends: libjs-magic-search, python-xstatic, ${misc:Depends}, ${python:Depends}
+Depends: libjs-magic-search (>= 0.2.5),
+         python-xstatic,
+         ${misc:Depends},
+         ${python:Depends},
 Description: Magic-Search XStatic support - Python 2.x
  XStatic is a Python web development tool for handling required static data
  files from external projects, such as CSS, images, and JavaScript. It provides
@@ -38,11 +41,10 @@ Description: Magic-Search XStatic support - Python 2.x
 
 Package: python3-xstatic-magic-search
 Architecture: all
-Pre-Depends: dpkg (>= 1.15.6~)
-Depends: libjs-magic-search,
+Depends: libjs-magic-search (>= 0.2.5),
          python3-xstatic,
          ${misc:Depends},
-         ${python3:Depends}
+         ${python3:Depends},
 Description: Magic-Search XStatic support - Python 3.x
  XStatic is a Python web development tool for handling required static data
  files from external projects, such as CSS, images, and JavaScript. It provides

@@ -1,9 +1,14 @@
-python-xstatic-magic-search (0.2.5.1-1) experimental; urgency=medium
+python-xstatic-magic-search (0.2.5.1-1) unstable; urgency=medium
 
+  [ Ivan Udovichenko ]
   * New upstream release.
   * Add myself to Uploaders field.
 
- -- Ivan Udovichenko <iudovichenko@mirantis.com>  Mon, 07 Sep 2015 16:21:41 +0300
+  [ Thomas Goirand ]
+  * Added version constraints for libjs-magic-search.
+  * Ran wrap-and-sort.
+
+ -- Thomas Goirand <zigo@debian.org>  Mon, 07 Sep 2015 13:46:30 +0000
 
 python-xstatic-magic-search (0.2.0.1-1) unstable; urgency=medium
 
