@@ -1,3 +1,10 @@
+python-xstatic-magic-search (0.2.5.1-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Add myself to Uploaders field.
+
+ -- Ivan Udovichenko <iudovichenko@mirantis.com>  Mon, 07 Sep 2015 16:21:41 +0300
+
 python-xstatic-magic-search (0.2.0.1-1) unstable; urgency=medium
 
   * Initial release. (Closes: #781761)
