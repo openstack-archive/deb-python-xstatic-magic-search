@@ -1,6 +1,6 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: XStatic-Magic-Search
-Source: git://github.com/stackforge/xstatic-magic-search.git
+Source: https://github.com/openstack/xstatic-magic-search.git
 
 Files: debian/*
 Copyright: (c) 2014, Thomas Goirand <zigo@debian.org>
