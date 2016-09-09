@@ -1,4 +1,6 @@
 [gerrit]
 host=review.openstack.org
 port=29418
-project=stackforge/xstatic-magic-search.git
+project=openstack/deb-python-xstatic-magic-search.git
+defaultbranch=debian/newton
+
