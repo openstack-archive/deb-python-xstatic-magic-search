@@ -13,8 +13,8 @@ Build-Depends: debhelper (>= 9),
 Build-Conflicts: python-xstatic,
                  python3-xstatic,
 Standards-Version: 3.9.6
-Vcs-Browser: https://anonscm.debian.org/cgit/openstack/python-xstatic-magic-search.git/
-Vcs-Git: https://anonscm.debian.org/git/openstack/python-xstatic-magic-search.git
+Vcs-Browser: https://git.openstack.org/cgit/openstack/deb-python-xstatic-magic-search?h=debian%2Fnewton
+Vcs-Git: https://git.openstack.org/openstack/deb-python-xstatic-magic-search -b debian/newton
 Homepage: https://github.com/stackforge/xstatic-magic-search
 
 Package: python-xstatic-magic-search
